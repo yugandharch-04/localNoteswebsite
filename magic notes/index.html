@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="h" id="h">
+            <div class="h1">
+                <span style="margin: 0 7px; font-weight: lighter;font-size: large;">Magic Notes</span>
+
+            </div>
+            <div class="h2">
+                <input type="search" name="search" placeholder="search" id="searchbar1"
+                    style="width:15rem; border-radius: 6px;padding:6px">
+                <span class="sbutn">Search</span>
+            </div>
+            <!-- <span style="margin: 0 3px;" id="menu" onclick="dd()">Menu</span> -->
+        </div>
+
+        <!-- <div class="dropdown">
+            <br><br>
+            <ul class="list" style="list-style: none;">
+                <li style="width:100vw;display:flex;justify-content: center;align-items: center;"><span style="margin: 0 3px;">Home</span></li>
+                 <li style="width:100vw;display:flex;justify-content: center;align-items: center;"><input type="search" name="search" placeholder="search" id="searchbar2"
+                        style="width:15rem; border-radius: 6px;padding:6px; margin:10px 0 "></li>
+                <li style="width:100vw;display:flex;justify-content: center;align-items: center;"><span class="sbutn">Search</span></li>
+                
+            </ul> -->
+        </div>
+    </header>
+    <div id="maincontent">
+        <h1>Welcome To Magic Notes</h1>
+        <br>
+        <div class="addingnote" style="padding: 15px; border: 2px solid rgb(190, 189, 189);">
+            <span style="font-size: medium;font-weight: bold;">Add a Title </span>
+            <br><br>
+            <textarea id="newtitle" cols="130" rows="1" style="max-width: 95%; line-height: 30px;" placeholder="Title for Your Note"></textarea>
+            <br><br>
+            <span style="font-size: medium;font-weight: bold;">Add a note</span>
+            <br><br>
+            <textarea id="newnotes" cols="130" rows="5" style="max-width: 95%;" placeholder="Write Your note Here"></textarea>
+            <br>
+            <br>
+            <input type="button" value="Add Note" id="addbtn"
+                style="padding:5px;background-color: rgb(59, 59, 245);color: white;border:none">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Your Notes</h1>
+        <br>
+        <hr><br>
+        <div class="cards" id="cards"></div>
+        <script src="/index.js"></script>
+</body>
+
+</html>
